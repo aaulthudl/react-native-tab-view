@@ -216,6 +216,7 @@ export default class ExampleList extends React.Component<any, State> {
                 <ExampleComponent />
               ) : null}
             </View>
+            <View style={styles.sidebar}></View>
           </SafeAreaView>
         </View>
       </SafeAreaProvider>
@@ -262,10 +263,15 @@ const styles = StyleSheet.create({
   safearea: {
     flex: 1,
     backgroundColor: '#000',
+    flexDirection: 'row',
   },
   content: {
     flex: 1,
     backgroundColor: '#eceff1',
+  },
+  sidebar: {
+    backgroundColor: 'pink',
+    width: '33%',
   },
 });
 
